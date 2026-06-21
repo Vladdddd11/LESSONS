@@ -3,10 +3,12 @@
 # Послідовність інших елементів не має змінюватися.
 # Порожній список або список з одним елементом повинен залишитися незмінним.
 # Кількість елементів у списку може бути будь-яким – нуль та більше!
-import numbers
 
-numbers = [1,2,3,4,5,6,7,8,9,10]
-if len(numbers) > 0:
-    numbers.insert(0, numbers[-1])
-    numbers.pop()
-print(numbers)
+
+registr = [1,2,3,4,5,6]
+
+if len(registr) > 0:
+    registr_new = registr[-1:]+registr[:-1]
+    print(registr_new)
+else:
+    print(registr)
