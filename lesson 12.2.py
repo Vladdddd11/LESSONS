@@ -6,7 +6,7 @@
 def generate_cube_numbers(end):
     number = 2
 
-    while number <= end:
+    while True:
 
         cube = number**3
 
